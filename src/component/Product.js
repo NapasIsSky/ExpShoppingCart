@@ -13,7 +13,7 @@ export default class Product extends Component {
           <p style={{height:'250px', overflowY: 'scroll'}}> {product.description} </p>
           <Row>
               <Text code>{product.price}Baht</Text>              
-              <Button>Add yo cart</Button>
+              <Button onClick={()=>this.props.handleClickAddToCart(product)} >Add to cart</Button>
           </Row>
           
       </Card>

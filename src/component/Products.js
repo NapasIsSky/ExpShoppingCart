@@ -6,7 +6,8 @@ export default class Products extends Component {
     renderProducts(){
         return this.props.products.map(product =>
             <Col span={8} key={product.id}>
-                <Product productDetail={product} />
+                <Product productDetail={product} 
+                handleClickAddToCart={this.props.handleClickAddToCart}/>
             </Col>
             )
     }
